@@ -27,6 +27,10 @@ Include the linq.js Javascript file on a page and project your object.
     </script>
 ```
 
+Result:
+
+![Projection results of example](https://github.com/toreaurstadboss/JsLinqSimpleProjection/blob/master/Screenshot.png)
+
 ## Is arrow methods supported
 
 No. No ES6 fancy stuff. Just a comma separated list of fields on the Json object.
