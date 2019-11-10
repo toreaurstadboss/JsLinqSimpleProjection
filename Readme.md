@@ -1,4 +1,4 @@
-# JsSimpleArithmeticParser
+# JsLinqSimpleProjection
 
 ## What is it?
 
