@@ -53,7 +53,7 @@ Result:
 
 No. No ES6 fancy stuff. Just a comma separated list of fields on the Json object.
 
-## Can I see the source code of the parser?
+## Can I see the source code of the projection and linq stuff in Javascript?
 
 Sure. Here you go. <a href='https://github.com/toreaurstadboss/JsLinqSimpleProjection/blob/master/linq.js'>linq.js</a>
 
