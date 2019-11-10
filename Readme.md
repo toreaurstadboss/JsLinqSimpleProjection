@@ -31,6 +31,21 @@ Result:
 
 ![Projection results of example](https://github.com/toreaurstadboss/JsLinqSimpleProjection/blob/master/Screenshot.png)
 
+<script type="text/javascript">
+      var someCountries = [
+          { country: "Norway", population: 5.2 },
+          { country: "Finland", population: 5.5 },
+          { country: "Iceland", population: 0.4 },
+          { country: "Sweden", population: 10.2 }
+        ];
+
+        result = someCountries.select("country,population");
+
+
+        document.getElementById("result").innerText = linqmodule.dump(result);
+
+    </script>
+
 ## Is arrow methods supported
 
 No. No ES6 fancy stuff. Just a comma separated list of fields on the Json object.

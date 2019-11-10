@@ -1,6 +1,6 @@
 {
   "name": "jslinqsimpleprojection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple projection of array structures with json objects in Javascript to easily choose which fields to include in the projection",
   "main": "linq.js",
   "scripts": {
