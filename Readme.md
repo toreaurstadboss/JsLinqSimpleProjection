@@ -31,6 +31,7 @@ Result:
 
 ![Projection results of example](https://github.com/toreaurstadboss/JsLinqSimpleProjection/blob/master/Screenshot.png)
 
+```Javascript
 <script type="text/javascript">
       var someCountries = [
           { country: "Norway", population: 5.2 },
@@ -45,6 +46,8 @@ Result:
         document.getElementById("result").innerText = linqmodule.dump(result);
 
     </script>
+
+```
 
 ## Is arrow methods supported
 
