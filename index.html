@@ -1,29 +1,18 @@
 <html>
   <head>
-    <title>A simple parser in Javascript</title>
+    <title>A simple parser for some Linq operators in Javascript</title>
   </head>
   <body style="background:moccasin;color:black">
-    <h3>A simple parser in Javascript</h3>
-    <script src="parser.js" type="text/javascript"></script>
+    <h3>A simple parser for Linq in Javascript</h3>
+    <script src="linq.js" type="text/javascript"></script>
 
-    <h3>A simple parser in Javascript</h3>
-
-    <em
-      >A standardized operator precendence in mathematics is defined at Wolfram
-      Mathworld here:
-      <br />
-      <a href="http://mathworld.wolfram.com/Precedence.html"
-        >http://mathworld.wolfram.com/Precedence.html</a
-      >
-    </em>
-    <br />
-    <br />
+    <h3>A simple parser for Linq in Javascript</h3>
 
     <form
       method="submit"
       onsubmit="evaluateArithmeticExpression(); return false;"
     >
-      <label for="expression"> Enter arithmetic expression to calculate:</label>
+      <label for="expression"> Enter expression to evalute:</label>
       <input type="text" id="expression" />
       <button type="submit" onclick="evaluateArithmeticExpression()">
         Evaluate
@@ -31,13 +20,6 @@
       <h4>Result:</h4>
       <div id="result"></div>
     </form>
-
-    <code>
-      Supported tokens in parser are parentheses and +-/* operators
-      Examples:
-      2+3 should evaluate to 5 
-      12 * 5–(5 * (32 + 4)) + 3 should evalute to -117
-    </em>
 
     <script type="text/javascript">
       function evaluateArithmeticExpression() {
@@ -47,10 +29,21 @@
         if (expression === null || expression.length < 1) {
           result = "Empty expression";
         }
-        result = parserArithmeticSimpleModule.parseArithmeticExpression(
-          expression
-        );
-        document.getElementById("result").innerText = result.toString();
+
+        var someNums = [
+          { country: "Norway", population: 5.2, code: "NO" },
+          { country: "Finland", population: 5.5, code: "SU" },
+          { country: "Iceland", population: 0.4, code: "IC" },
+          { country: "Sweden", population: 10.2, code: "SW" }
+        ];
+
+        result = someNums.select("country,population");
+
+        //debugger;
+
+        document.getElementById("result").innerText = linqmodule.dump(result);
+
+        console.log(result);
       }
     </script>
   </body>
