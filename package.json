@@ -1,19 +1,19 @@
 {
-  "name": "simplejsparsermatharithmetic",
-  "version": "1.0.1",
-  "description": "A simple parser in Javascript for evaluating basic arithmetic expression support the base four arithmetic operators +-/ and parentheses.*",
-  "main": "parser.js",
+  "name": "jslinqsimpleprojection",
+  "version": "1.0.0",
+  "description": "A simple projection of array structures with json objects in Javascript to easily choose which fields to include in the projection",
+  "main": "linq.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "javascript",
-    "parser",
+    "linq",
     "simple",
-    "arithmetic",
+    "projection",
     "demo"
   ],
   "author": "Tore Aurstad",
   "license": "MIT",
-  "homepage": "https://github.com/toreaurstadboss/JsSimpleArithmeticParser"
+  "homepage": "https://github.com/toreaurstadboss/JsLinqSimpleProjection"
 }
